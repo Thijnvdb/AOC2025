@@ -3,11 +3,12 @@ package main
 import (
 	"flag"
 	"fmt"
-	. "thijnvdb/aoc2025/day1"
+	"thijnvdb/aoc2025/day01"
+	"thijnvdb/aoc2025/day02"
 	. "thijnvdb/aoc2025/shared"
 )
 
-var days []Day = []Day{Day1}
+var days []Day = []Day{day1.Definition, day2.Definition}
 
 func main() {
 	day := flag.Uint("day", 1, "the day")

@@ -4,9 +4,9 @@ import "github.com/alecthomas/participle/v2/lexer"
 
 var (
 	day1Lexer = lexer.MustSimple([]lexer.SimpleRule{
-		{"Prefix", `(L|R)`},
-		{"Number", `[0-9]+`},
-		{"newLine", `\n`},
+		{Name: "Prefix", Pattern: `(L|R)`},
+		{Name: "Number", Pattern: `[0-9]+`},
+		{Name: "newLine", Pattern: `\n`},
 	})
 )
 
